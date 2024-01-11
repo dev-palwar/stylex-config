@@ -1,4 +1,5 @@
 import * as stylex from "@stylexjs/stylex";
+import ButtonL2 from "./components/Button";
 
 const style = stylex.create({
   test: {
@@ -11,5 +12,9 @@ const style = stylex.create({
 });
 
 export default function Home() {
-  return <div {...stylex.props(style.test)}>dev</div>;
+  return (
+    <div {...stylex.props(style.test)}>
+      <ButtonL2 variant="primary">A button</ButtonL2>
+    </div>
+  );
 }
